@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="gif" href="../../assets/images/Logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"
+    />
+    <link rel="stylesheet" href="../css/dom_ejercicios.css" />
+  </head>
+
+  <body data-dark>
+    <header class="header">
+      <center>
+        <h1 class="animated-text">Portafolio 1: Jonnathan Monroy</h1>
+      </center>
+    </header>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+        <nav class="menu">
+        <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
+        <a href="#seccion16" data-scroll-spy>Videos de presentacion</a>
+        <a href="#seccion1" data-scroll-spy>Video inteligente</a>
+        <a href="#seccion10" data-scroll-spy>Filtro de repositorios</a>
+        <a href="#seccion15" data-scroll-spy>Narrador</a>
+        <a href="#seccion2" data-scroll-spy>Eventos del teclado</a>
+        <a href="#seccion3" data-scroll-spy> Cuenta regresiva</a>
+        <a href="#seccion4" data-scroll-spy>Responsive con JavaScript</a>
+        <a href="#seccion5" data-scroll-spy>Responsive Tester</a>
+        <a href="#seccion6" data-scroll-spy
+          >Deteccion de Dispositivos (User Agent)</a
+        >
+        <a href="#seccion7" data-scroll-spy>Deteccion de la conexión</a>
+        <a href="#seccion8" data-scroll-spy>Deteccion de la cámara web</a>
+        <a href="#seccion9" data-scroll-spy>Geolocalizacion</a>
+        <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
+        <a href="#seccion13" data-scroll-spy>Reloj Digital y Alarma sonora</a>
+        <a href="#seccion14" data-scroll-spy>Escribeme tus comentarios y sugerencias</a>
+      </nav>
+    </aside>
+    <main>
+        <section id="seccion12" class="section" data-scroll-spy>
+            <div class="textBox">
+            <h2 >
+          Mucho gusto, soy Jonnathan! 👍
+        </h2>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slider-slide active">
+              <!-- Sólo una de las div debe tener esta clase activa ya que es con la que va a empezar el Slide-->
+              <img
+                src="../../assets/images/deEspalda.jpg"
+                alt="foto1"
+              />
+            </div>
+            <div class="slider-slide">
+              <!-- Sólo una de las div debe tener esta clase activa ya que es con la que va a empezar el Slide-->
+              <img
+                src="../../assets/images/DeLadoFrente2pantallas.jpg"
+                alt="foto2"
+              />
+            </div>
+            <div class="slider-slide">
+              <!-- Sólo una de las div debe tener esta clase activa ya que es con la que va a empezar el Slide-->
+              <img
+                src="../../assets/images/deFrenteDosPantallas.jpg"
+                alt="foto3"
+              />
+            </div>
+            <div class="slider-slide">
+              <!-- Sólo una de las div debe tener esta clase activa ya que es con la que va a empezar el Slide-->
+              <img
+                id="img_"
+                src="../../assets/images/camisetaVerde.jpg"
+                alt="foto4"
+              />
+            </div>
+          </div>
+          <div class="slider-btns">
+            <a class="prev" href="#">&laquo;</a>
+            <a class="next" href="#">&raquo;</a>
+          </div>
+        </div>
+          <br />
+          <p>
+            Por medio de este portafolio hago presentacion de algunos de mis
+            trabajos en mi experiencia programando. Dentro de cada sección se
+            genera una explicacion del uso de cada elemento por medio de este símbolo:
+            <button id="o1" class="BModal">?</button>
+          </p>
+          <p >
+            Al final del mismo esta el formulario de contacto a travez del cual
+            es posible enviarme un correo con cualquier consulta, sugerencia o
+            comentario. Muchas gracisa por estar aquí y espero disfrutes mi
+            contenido.
+            </button>
+          </p>
+        </div>
+
+        <div class="modal-background" id="mb1">
+          <div class="modal-content">
+            <h2>Carrusel</h2>
+            <p>Este carrusel muestra cuatro fotos en total, para verlas haz click en los laterales dentro de la foto</p>
+            <br>
+            <br>
+            <button id="c1" class="blue-btn">Cerrar</button>
+          </div>
+        </div>
+        
+      </section>
+      <section id="seccion16" class="section iframe-contenedor" data-scroll-spy>
+        <div class="textBox iframe-contenedor adjust">
+          <h1>Videos de presentacion y explicacion de trabajos:</h1>
+          <p>
+            En los siguientes videos hago la presentacion de temas como los
+            repositorios, paginas y proyectos que evidencias mis conocimientos.
+            <button id="o2" class="BModal">?</button>
+          </p>
+          <!-- Lista desplegable con opciones de videos -->
+          <select id="videoSelect" class="transparent-input">
+            <option>Selecciona un video</option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/5ox9MNQqrb0" title="Node, express, javaScript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              Node, express, javaScript.
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/9Yu0clIsOOU" title="React, framework Vite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              React, framework Vite
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/YI6hTwrWarI" title="Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              Java
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/wmJ-jyBCo0k" title="SQL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              SQL
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/ZcKH9b4mlWk" title="Mongoose" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              Mongoose
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/l_hxsfd9Uto" title="Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              Python
+            </option>
+            <option
+              value='<iframe class="iframe-responsivo" src="https://www.youtube.com/embed/_x7Cs3Wu7L0" title="Responsividad, bootstrap, animaciones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+            >
+              Responsividad, bootstrap, animaciones
+            </option>
+          </select>
+
+          <!-- Div para reproducir el video -->
+          <div id="videoContainer" class="div-iframe">
+            <!-- Aquí se cargará el video de YouTube -->
+          </div>
+        </div>
+
+        <div class="modal-background" id="mb2">
+          <div class="modal-content">
+            <h2>Iframe Responsivo</h2>
+            <p>Aqui tenemos un iframe con rutas embebidas de videos de youtuve, se ajusta el tamaño del iframe al tamaño de la pantalla.</p>
+            <br>
+            <br>
+            <button id="c2" class="blue-btn">Cerrar</button>
+          </div>
+        </div>
+      </section>
+      <section id="seccion1" class="section" data-scroll-spy>
+        <div class="textBox">
+            <div class="emoticon">
+                <p  class="girar mgc" id="tv">📺</p>
+                <div>
+                    <h2 class="mgc">Video Inteligente</h2>
+                    <p class="mgc">
+                        Este video sólo se reproduce mientras lo estás viendo.
+                    </p>
+                </div>
+            </div>
+          <video
+          id="videoInteligente"
+          src="../../assets/GrabacionInicial.mp4"
+          controls
+          muted
+          loop
+          data-smart-video
+          ></video>
+          <!-- para que nos permita iniciar el video debe estar muteado pues los permisos pueden blokearlo -->
+        </div>
+          <br />
+          <!-- si uno quiere que el video se reproduzca desde el inicio hay que dar autoplay, pero en dispositivos mobiles el usuario es el que tiene que  darle a la reproduccion. -->
+      </section>
+      <section id="seccion10" class="section" data-scroll-spy>
+        <div class="textBox">
+          <h2>Repositorios en GitHub 🔎</h2>
+                      <p>Aqui muestro algunas de las tectnologias y librerias principales que uso, haz click sobre la tarjeta para que se habra una ventana que te dirige al repositorio especifico de git hub</p>
+          <input
+            type="search,"
+            placeholder="Buscar..."
+            class="card-filter transparent-input"
+          />
+        </div>
+        <article class="cards">
+          <figure class="card rebotar">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/descarga.png" alt="React" />
+              <figcaption>React</figcaption>
+            </a>
+          </figure>
+          <figure class="card rebotar">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/javaScript.jfif" alt="javaScript" />
+              <figcaption>javaScript</figcaption>
+            </a>
+          </figure>
+          <figure class="card rebotar">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/node.png" alt="NodeJS" />
+              <figcaption>Node JS</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/Sql_n.JPG" alt="SQL" />
+              <figcaption>SQL</figcaption>
+            </a>
+          </figure>
+                    <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img
+                src="../../assets/images/mongo.png" alt="MongoDB"/>
+              <figcaption>MongoDb</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/java.png" alt="Java" />
+              <figcaption>Java</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img src="../../assets/images/python.png" alt="Python" />
+              <figcaption>Python</figcaption>
+            </a>
+          </figure>
+                    <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img
+                src="../../assets/images/bootstrapjfif.jfif"
+                alt="Bootstrap"
+              />
+              <figcaption>Bootstrap</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img
+                src="../../assets/images/HTML5.png" alt="Html"/>
+              <figcaption>Html</figcaption>
+            </a>
+          </figure>
+          <figure class="card">
+            <a
+              href="https://github.com/JonnathanMS/Portafolio1Produccion"
+              target="_blank"
+            >
+              <img
+                src="../../assets/images/css.png" alt="Css"/>
+              <figcaption>CSS</figcaption>
+            </a>
+          </figure>
+        </article>
+      </section>
+      <section id="seccion15" class="section" data-scroll-spy>
+        <div class="textBox">
+          <h2>Narrador</h2>
+          <p>
+            Aqui puedes escuchar una lectura del texto que ingreses con el
+            acento que selecciones ¡Es muy divertido por ejemplo escuchar el
+            Francés!
+          </p>
+        </div>
+        <div id="DivNarrador">
+          <select id="speech-select">
+            <option value="">---Elige una voz ---</option>
+          </select>
+          <br /><br />
+          <textarea
+            name="textoNarrador"
+            id="speech-text"
+            cols="50"
+            rows="5"
+            placeholder="Ingrese texto a leer"
+          ></textarea>
+          <br />
+          <button id="speech-btn">🗣️</button>
+        </div>
+      </section>
+      <section id="seccion2" class="section" data-scroll-spy>
+        <div class="textBox">
+          <h2>⌨️ Eventos del teclado</h2>
+          <p>
+            Con las teclas de flecha en el teclado puedes mover al planeta, aqui
+            se usa manejo de eventos, deteccion de colisiones entre otras cosas.
+            (Si quieres ver el limite cambia a modo día, en modo nocturno sera
+            inmersivo)
+          </p>
+        </div>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+      </section>
+      <section id="seccion3" class="section" data-scroll-spy>
+        <div class="textBox">
+          <p id="reloj2" class="girar">⏳</p>
+
+          <h2>Cuenta Regresiva</h2>
+          <form id="cuenta-regresiva" action="">
+            <input
+              class="transparent-input"
+              type="date"
+              name="fecha"
+              title="La fecha es requerida"
+              required
+            />
+
+            <input
+              class="transparent-input"
+              type="time"
+              name="hora"
+              title="La fecha es requerida"
+              required
+            />
+
+            <br />
+            <input class="blue-btn" type="submit" value="Calcular" />
+          </form>
+          <div id="countdown"></div>
+        </div>
+      </section>
+      <section id="seccion4" class="section" data-scroll-spy>
+        <div class="textBox">
+          <p id="celular" class="rebotar">📱</p>
+          <h2>Responsive con JavaScript</h2>
+          <p>
+            Cuando nuestro usuario esta viendo la pagina desde un celular es
+            probable que no quiera gastarse los datos en la reproduccion de un
+            video y un mapa. Es por eso que agregamos la opcion del link de
+            manera responsiva para que en dicho caso el pueda abrir el video.
+            Esto se vera en las resoluciones pequeñas.
+          </p>
+        </div>
+        <br />
+        <div id="youtube"></div>
+        <br />
+        <br />
+        <p class="textBox">🌎 Google maps de Medellín</p>
+        <div id="gmaps"></div>
+      </section>
+      <section id="seccion5" class="section" data-scroll-spy>
+        <div class="textBox">
+          <h2>📱 Responsive Tester</h2>
+          <p>
+            Aqui puedes ensayar en otra ventana la visualizacion de una pagina
+            web para revisar su aspecto en el ancho y alto seleccionado, por
+            ejemplo puedes tomar la url de esta misma página y colocarla en
+            ancho 300 alto 400 y verla en su aspecto responsive.
+          </p>
+          <form id="responsive-tester" action="">
+            <input
+              class="transparent-input"
+              name="direccion"
+              type="url"
+              placeholder="URL"
+              required
+            />
+            <br />
+            <input
+              class="transparent-input"
+              name="ancho"
+              type="text"
+              placeholder="Ancho"
+              required
+            />
+            <br />
+            <input
+              class="transparent-input"
+              name="alto"
+              type="text"
+              placeholder="Alto"
+              required
+            />
+            <br />
+            <input
+              class="blue-btn"
+              name="probar"
+              type="submit"
+              value="Probar"
+            />
+            <input
+              class="blue-btn"
+              name="cerrar"
+              type="button"
+              value="Cerrar"
+            />
+          </form>
+        </div>
+      </section>
+      <section id="seccion6" class="section" data-scroll-spy>
+        <div class="textBox">
+          <p id="detector">🕵🏻</p>
+          <h2>Deteccion de Dispositivos (User Agent)<button id="o4" class="BModal">?</button></h2>
+                  
+          <div id="user-device"></div>
+        </div>
+        <div class="modal-background" id="mb4">
+          <div class="modal-content">
+            <h2>Deteccion de Dispositivo</h2>
+            <p>De esta manera detectamos con que dispositivo y sitema operativo ingresa el usuario, esto para ajustar algunos parametros y brindar una mejor experiencia de usuario</p>
+            <br>
+            <br>
+            <button id="c4" class="blue-btn">Cerrar</button>
+          </div>
+        </div>
+      </section>
+      <section id="seccion7" class="section" data-scroll-spy>
+        <div class="textBox">
+          <!-- <p id="internet">📡</p> -->
+          <img src="../../assets/gif/antena.gif" alt="" class="gif" />
+          <h2>Detección de la conexión</h2>
+          <p>
+            Esta pagina detecta si tienes conexion o nó. Puedes desconectar el
+            internet o dar click derecho, luego inspeccionar, luego Aplicacion y
+            chulear y deschulear Ofline como se muestra:
+          </p>
+          <img src="../../assets/images/offLine.png" alt="" />
+        </div>
+      </section>
+      <section id="seccion8" class="section" data-scroll-spy>
+        <div class="textBox">
+          <!-- <p id="camara">🎥</p> -->
+          <img
+            class="gif"
+            src="../../assets/gif/Gif_Camara_de_video.gif"
+            alt=""
+          />
+          <h2>Deteccion de la cámara web</h2>
+          <p>
+            Para ver esta funcionalidad es necesario que des permiso para
+            acceder a la cámara de tu dispositivo.
+          </p>
+          <video id="webcam"></video>
+        </div>
+      </section>
+      <section id="seccion9" class="section" data-scroll-spy>
+        <div class="textBox">
+          <img src="../../assets/gif/earth.gif" alt="" id="mapaMundi" />
+          <h2>Geolocalizacion</h2>
+          <p>
+            Para ver esta funcionalidad es necesario que des permisos para
+            acceder a la hubicación.
+          </p>
+          <div id="geolocation"></div>
+        </div>
+      </section>
+
+      <section id="seccion11" class="section" data-scroll-spy>
+        <div class="textBox">
+          <!-- <p id="sorteo">🎰</p> -->
+          <img src="../../assets/gif/tragamonedas.gif" alt="" class="gif" />
+          <h2>Sorteo Digital</h2>
+          <p>
+            Aqui ponemos en práctica la seleccion de un item de manera ramdom
+            entre los siguientes elementos, si das click en aceptar te abrira
+            otra pestaña con el video ó el repositorio del elemento del sorteo.
+          </p>
+          <center>
+            <ul class="players">
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/5ox9MNQqrb0"
+              >
+                ⭐ Node, express, javaScript.
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/9Yu0clIsOOU"
+              >
+                ⭐ React, framework Vite
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/YI6hTwrWarI"
+              >
+                ⭐ Java
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/wmJ-jyBCo0k"
+              >
+                ⭐ SQL
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/ZcKH9b4mlWk"
+              >
+                ⭐ Mongoose
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/l_hxsfd9Uto"
+              >
+                ⭐ Python
+              </li>
+              <li
+                class="player"
+                url="https://www.youtube.com/embed/_x7Cs3Wu7L0"
+              >
+                ⭐ Responsividad, bootstrap, animaciones
+              </li>
+            </ul>
+          </center>
+          <button class="blue-btn" id="winner-btn">Obtener Ganador</button>
+        </div>
+      </section>
+
+      <section id="seccion13" class="section" data-scroll-spy>
+        <div class="textBox">
+          <!-- <p id="reloj1">⌚</p> -->
+          <img src="../../assets/gif/relojVerde.gif" alt="" class="gif" />
+          <h2>Hora y música de fondo:</h2>
+          <div id="reloj"></div>
+          <div>
+            <button class="blue-btn" id="activar-reloj">Ver reloj</button>
+            <button class="blue-btn" id="desactivar-reloj">Quitar reloj</button>
+            <button class="blue-btn" id="activar-alarma">Música</button>
+            <button class="blue-btn" id="desactivar-alarma">🔇</button>
+          </div>
+          <!-- <audio src="../../assets/Comodo.mp3" controls></audio> -->
+        </div>
+      </section>
+
+      <section id="seccion14" class="section" data-scroll-spy>
+        <div class="textBox">
+          <img id="sonriza" src="../../assets/gif/guiño.gif" alt="" />
+          <h2>Gracias por ver mi trabajo!</h2>
+          <h2>Envíame tus comentarios y sugerencias:</h2>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/jhonnnario@gmail.com"
+            method="POST"
+            target="_blank"
+          >
+            <!-- ! ESTE CODIGO DE ARRIBA ENVIA LOS DATOS DEL FORMULARIO  USANDO LA PAGIAN FORMSUBMIT-->
+
+            <!-- <legend>Envíame tus comentarios y sugerencias:</legend> -->
+            <!-- Importante no dejar espacios en el pattern de la expresion regular -->
+            <!-- El browser mostrara en las alertas lo que hay en el title -->
+            <!-- El required=required hace que solicite que el campo no este vacio. -->
+            <!-- pattern evalua una expresion regular o patron en el input -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Escribe tu nombre"
+              title="El nombre sólo acepta letras y espacios en blanco"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Escribe tu e-mail"
+              title="Email incorrecto"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              required
+            />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto a tratar"
+              title="El asunto es requerido"
+              required
+            />
+
+            <!-- como el textarea no acepta pattern se le inventó un atributo data pattern  -->
+            <textarea
+              name="comments"
+              cols="50"
+              rows="5"
+              placeholder="Escribe tus comentarios aquí."
+              title="Tu comentario no debe exceder los 255 caracteres."
+              data-pattern="^.{1,255}$"
+              required
+            ></textarea>
+            <input id="send-blue" type="submit" value="Enviar" />
+            <div class="contact-form-loader none">
+              <img
+                src="../../assets/svg-loaders/ball-triangle.svg"
+                alt="Cargando"
+              />
+            </div>
+            <div class="contact-form-response none">
+              <p>Los datos han sido enviados</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <button class="scroll-top-btn hidden">&#11014;</button>
+    <button class="dark-theme-btn girar">🌌</button>
+    <script src="../js/index_dom.js" type="module"></script>
+  </body>
+</html>
+
+<!-- // cambas, drag and drop y otras api de javaScript : cosas del front que puedo aprender -->
